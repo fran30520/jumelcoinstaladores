@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Jumelco Instaladores</string>
+    <string name="pref_file">com.example.jumelcoinstaladores.PREFERENCE_FILE_KEY</string>
+    <string name="acceder">acceder</string>
+    <string name="main_olvido">¿Has olvidado la contraseña?</string>
+    <string name="main_contraseña">contraseña</string>
+    <string name="main_registro">registro</string>
+    <string name="main_error_size">La contraseña debe contener 8 caracteres mínimo</string>
+    <string name="main_error_email">El email no puede estar vacio</string>
+    <string name="main_error_email2">Introduzca un email correcto por favor</string>
+
+    <string name="main_email">Introduzca su email</string>
+
+    <string name="main2_registrarse">registrarse</string>
+    <string name="main2_phone">Introduzca su telefono</string>
+    <string name="main2_direction">Introduzca su dirección</string>
+    <string name="main2_usuario">Introduzca su nombre</string>
+    <string name="main2_apellidos">Introduzca sus apellidos</string>
+    <string name="main2_cancelar">cancelar</string>
+    <string name="main2_error">No se puede quedar vacio este campo</string>
+    <string name="main2_error_nombre">Introduce tu nombre</string>
+    <string name="main2_error_apellidos">Introduce tus apellidos</string>
+    <string name="main2_error_direccion">Introduce la dirección</string>
+    <string name="main2_error_telefono">Introduce un telefono correcto</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main10_resultText">SU CONTRASEÑA ES:</string>
+    <string name="main10_text_phone">INTRODUZCA SU TELEFONO</string>
+    <string name="main10_recup_pasw">¿HAS OLVIDADO LA CONTRASEÑA?, COMPLETA LOS CAMPOS PARA RECUPERARLA</string>
+    <string name="main10_text_email">INTRODUZCA SU EMAIL</string>
+    <string name="main10_button_mostrar">MOSTRAR CONTRASEÑA</string>
+    <string name="main10_button_volver">VOLVER</string>
+    <string name="main3_ver_mis_citas">VER CITAS</string>
+    <string name="main3_ver_teleco">TELECOMUNICACIONES</string>
+    <string name="main3_air">AIRE ACONDICIONADO</string>
+    <string name="main3_alarm">ALARMAS</string>
+    <string name="main3_electric">ELECTRICIDAD</string>
+    <string name="main3_tex_welcome">BIENVENIDO A JUMELCO INSTALADORES, ELIJA EN QUE PODEMOS AYUDARLE</string>
+
+    <string name="main4_text_observations">ESCRIBA AQUI SUS DETALLES</string>
+    <string name="main4_text_request">solicitar cita</string>
+    <string name="main4_spinner_text">SELECCIONA UNA OPCION:</string>
+    <string name="main4_select_item">Ha seleccionado la opción:</string>
+    <string name="main8_button_ver">ver su cita</string>
+    <string name="main9_confirm">confirmar cita</string>
+    <string name="main9_txt_cita">SU CITA HA SIDO PREPARADA PARA EL:</string>
+    <string name="main9_hi">HOLA:</string>
+    <string name="main10_goodbye">MUCHAS GRACIAS POR CONFIAR EN NOSOTROS, HASTA LA PROXIMA</string>
+    <string name="main10_exit">salir</string>
+    <string name="main9_thanks">MUCHAS GRACIAS POR CONFIAR EN NOSOTROS</string>
+    <string name="main3_exit">cerrar sesión</string>
+
+
+    <string-array name="Servicios_electricidad">
+        <item></item>
+        <item>TRABAJOS DE ELECTRICIDAD EN VIVIENDA</item>
+        <item>TRABAJOS DE REPARACION DE COMERCIO</item>
+        <item>TRABAJOS DE ILUMINACIÓN EN VIVIENDA</item>
+        <item>OTROS TRABAJOS</item>
+    </string-array>
+
+    <string-array name="Servicios_Alarm">
+        <item></item>
+        <item>COLOCACION DE ALARMA</item>
+        <item>REPARACION DE ALARMA</item>
+        <item>PRESUPUESTO DE ALARMA</item>
+        <item>OTROS TRABAJOS</item>
+    </string-array>
+
+    <string-array name="Servicios_teleco">
+        <item></item>
+        <item>REVISION DE ANTENA</item>
+        <item>INSTALACION DE APARATOS DE TV</item>
+        <item>INSTALACION DE PARABOLICA</item>
+        <item>OTROS TRABAJOS</item>
+    </string-array>
+
+    <string-array name="Servicios_air">
+        <item></item>
+        <item>COLOCACION DE APARATO DE AACC</item>
+        <item>REPARACION DE APARATO DE AACC</item>
+        <item>PRESUPUESTO DE ACC</item>
+        <item>OTROS TRABAJOS</item>
+    </string-array>
+
+
+
+
+
+</resources>

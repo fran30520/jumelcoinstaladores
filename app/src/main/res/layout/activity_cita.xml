@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".citaActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main9_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main9_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main9_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main9_button_exit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main9_guide3"
+        app:layout_constraintEnd_toStartOf="@id/main9_guide2"
+        app:layout_constraintStart_toEndOf="@id/main9_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/main10_exit"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main9_button_return"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main10_button_volver"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/main9_button_exit"
+        app:layout_constraintEnd_toStartOf="@id/main9_guide2"
+        app:layout_constraintStart_toEndOf="@id/main9_guide1"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp" />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main9_text_cita"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="SU CITA SERÁ CONTESTADA ENTRE 24/48 H"
+        android:textSize="18sp"
+        android:textAlignment="gravity"
+        android:textColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main9_button_return"
+        app:layout_constraintEnd_toStartOf="@id/main9_guide2"
+        app:layout_constraintStart_toEndOf="@id/main9_guide1"
+
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main9_textv_date3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/main9_thanks"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main9_text_cita"
+        app:layout_constraintEnd_toStartOf="@id/main9_guide2"
+        app:layout_constraintStart_toEndOf="@id/main9_guide1"
+
+        />
+
+    <ImageView
+        android:id="@+id/main9_jumelcoLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:src="@mipmap/ic_jumelco_logo_final"
+        app:layout_constraintBottom_toTopOf="@id/main9_textv_date3"
+        app:layout_constraintEnd_toStartOf="@id/main9_guide2"
+        app:layout_constraintStart_toEndOf="@id/main9_guide1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

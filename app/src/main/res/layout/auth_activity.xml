@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/authLayout"
+    tools:context=".AuthActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_boton_olvidar"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main_guide3"
+        app:layout_constraintEnd_toStartOf="@id/main_guide2"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        android:text="@string/main_olvido"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_registro"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main_boton_olvidar"
+        app:layout_constraintEnd_toStartOf="@id/main_guide2"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:icon="@drawable/ic_registro"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:iconGravity="textStart"
+        app:iconPadding="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main_registro"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_acceder"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main_registro"
+        app:layout_constraintEnd_toStartOf="@id/main_guide2"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:icon="@drawable/ic_login"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:iconGravity="textStart"
+        app:iconPadding="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/acceder"
+        />
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/main_password"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/main_acceder"
+    app:layout_constraintEnd_toStartOf="@id/main_guide2"
+    app:layout_constraintStart_toEndOf="@id/main_guide1"
+    android:layout_marginBottom="30dp"
+    app:endIconMode="password_toggle"
+    app:errorEnabled="true"
+    app:boxStrokeColor="@color/color_secondary_variant"
+    app:boxStrokeWidth="2dp"
+    app:cornerRadius="15dp"
+    app:hintTextColor="@color/color_secondary_variant"
+    android:hint="@string/main_contraseña">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/main_password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword">
+    </com.google.android.material.textfield.TextInputEditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main_password"
+        app:layout_constraintEnd_toStartOf="@id/main_guide2"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        android:layout_marginBottom="15dp"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secondary_variant"
+        android:hint="@string/main_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<ImageView
+    android:id="@+id/main_jumelcoLogo"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/main_email"
+    app:layout_constraintStart_toEndOf="@id/main_guide1"
+    app:layout_constraintEnd_toStartOf="@id/main_guide2"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@mipmap/ic_jumelco_logo_final"
+    android:gravity="center"
+    android:padding="20dp"
+    app:strokeColor="@color/color_secondary_variant"
+    app:strokeWidth="2dp"
+    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

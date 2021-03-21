@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recoveryActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main11_guie1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main11_guie2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main11_guie3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="horizontal"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main11_boton_volver"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_guie3"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:iconGravity="textStart"
+        app:iconPadding="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main10_button_volver"
+        />
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/main11_result"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/main11_boton_volver"
+    app:layout_constraintStart_toEndOf="@id/main11_guie1"
+    app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main11_result_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/main11_edit_password"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/main11_result"
+    app:layout_constraintStart_toEndOf="@id/main11_guie1"
+    app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+    android:layout_marginBottom="5dp"
+    android:text="@string/main10_resultText"
+    android:textAlignment="center"
+    />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main11_boton_recovery"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_edit_password"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:iconGravity="textStart"
+        app:iconPadding="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main10_button_mostrar"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main11_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_boton_recovery"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        android:layout_marginBottom="15dp"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secondary_variant"
+        android:hint="@string/main2_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main11_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main11_text_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_phone"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        android:layout_marginBottom="5dp"
+        android:text="@string/main10_text_phone"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main11_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_text_phone"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        android:layout_marginBottom="15dp"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secondary_variant"
+        android:hint="@string/main_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main11_email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main11_text_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main11_email"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        android:layout_marginBottom="5dp"
+        android:text="@string/main10_text_email"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main11_text_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/main10_recup_pasw"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/main11_text_email"
+        app:layout_constraintEnd_toStartOf="@id/main11_guie2"
+        app:layout_constraintStart_toEndOf="@id/main11_guie1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

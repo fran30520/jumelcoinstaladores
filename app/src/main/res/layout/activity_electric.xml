@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".electricActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main4_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main4_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main4_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="horizontal"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main4_button_volver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main4_guide3"
+        app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+        app:layout_constraintStart_toEndOf="@id/main4_guide1"
+
+        android:layout_marginEnd="15dp"
+        android:text="@string/main10_button_volver"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:cornerRadius="15dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/main4_text_observ"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@id/main4_button_volver"
+        app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+        app:layout_constraintStart_toEndOf="@id/main4_guide1"
+        android:hint="@string/main4_text_observations"
+        android:textAlignment="textStart"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:minLines="3"
+        android:imeOptions="actionNext"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main4_button_choose"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main4_text_observ"
+        app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+        app:layout_constraintStart_toEndOf="@id/main4_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/main4_text_request"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/main4_button_choose"
+        app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+        app:layout_constraintStart_toEndOf="@id/main4_guide1"
+        app:layout_constraintTop_toTopOf="@id/main4_text_title">
+
+        <TextView
+            android:id="@+id/main4_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main4_spinner_text"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/main4_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/main4_txtView"
+            android:gravity="center"
+            android:foregroundTint="@color/color_secondary_variant"
+            android:textAlignment="gravity"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/main4_text_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/main4_button_choose"
+    app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+    app:layout_constraintStart_toEndOf="@id/main4_guide1"
+    android:layout_marginBottom="100dp"
+    android:text="@string/main3_electric"
+    android:textAlignment="center"
+    android:textSize="22sp"
+    android:textColor="@color/color_secondary_variant"
+
+
+    />
+
+    <ImageView
+        android:id="@+id/main4_jumelcoLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/main4_text_title"
+        app:layout_constraintStart_toEndOf="@id/main4_guide1"
+        app:layout_constraintEnd_toStartOf="@id/main4_guide2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_jumelco_logo_final"
+        android:gravity="center"
+        android:padding="20dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

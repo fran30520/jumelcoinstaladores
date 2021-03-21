@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singupActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main2_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/main2_guide3"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main2_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="@string/main2_cancelar"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/color_secondary_variant"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main2_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main2_registrarse"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/color_secondary_variant"
+            app:strokeWidth="2dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/main2_phone"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main2_linear"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number|phone">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_direction"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/main2_direction"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main2_phone"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_direction_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPostalAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_apellidos"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/main2_apellidos"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main2_direction"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_apellidos_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_nombre"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/main2_usuario"
+        app:boxStrokeColor="@color/color_secondary_variant"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary_variant"
+        app:layout_constraintBottom_toTopOf="@id/main2_apellidos"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_nombre_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main2_password_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/main2_nombre"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main2_email_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/main2_password_edit"
+        app:layout_constraintEnd_toStartOf="@id/main2_guide2"
+        app:layout_constraintStart_toEndOf="@id/main2_guide1">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

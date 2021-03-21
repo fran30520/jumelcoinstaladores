@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- SplashScreen -->
+    <style name="splah" parent="base.Mytheme">
+        <item name="android:windowBackground">@drawable/jumelco_splash_screen</item>
+
+        <!-- Status bar -->
+    <item name="android:statusBarColor">@color/transparent</item>
+    <item name="android:windowLightStatusBar">true</item>
+        <!-- DIVIDER-->
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <!-- Navigation bar -->
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="base.Mytheme" parent="Theme.MaterialBaseTheme">
+        <!-- Base application theme. -->
+
+            <!-- Primary brand color. -->
+            <item name="colorPrimary">@color/color_primary</item>
+            <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+            <item name="colorOnPrimary">@color/color_on_primary</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/color_secondary</item>
+            <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+            <item name="colorOnSecondary">@color/color_on_secondary</item>
+            <item name="android:colorBackground">@color/color_background</item>
+            <item name="colorOnBackground">@color/color_on_background</item>
+            <item name="colorSurface">@color/color_surface</item>
+            <item name="colorOnSurface">@color/color_on_surface</item>
+            <item name="colorError">@color/color_error</item>
+            <item name="colorOnError">@color/color_on_error</item>
+
+
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+            <!-- Customize your theme here. -->
+
+            <!-- Transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:fragmentExitTransition">@android:transition/slide_top</item>
+    </style>
+
+    <style name="Base.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
+
+
+    <style name="Base.MyTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Base.MyTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Theme.MaterialBaseTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    </style>
+</resources>

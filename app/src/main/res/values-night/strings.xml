@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="acceder">acceder</string>
+    <string name="main_olvido">¿Has olvidado la contraseña?</string>
+    <string name="main_contraseña">contraseña</string>
+    <string name="main_usuario">nombre de usuario</string>
+    <string name="main2_registrarse">registrarse</string>
+    <string name="main2_email">Introduzca su email</string>
+    <string name="main10_resultText">SU CONTRASEÑA ES:</string>
+    <string name="main10_text_phone">INTRODUZCA SU TELEFONO</string>
+    <string name="main10_text_email">INTRODUZCA SU EMAIL</string>
+    <string name="main10_button_mostrar">MOSTRAR</string>
+    <string name="main10_button_volver">VOLVER</string>
+    <string name="main3_ver_mis_citas">VER MIS CITAS</string>
+    <string name="main4_select_item">Selecciona una opción:</string>
+    <string name="main8_button_ver">ver su cita</string>
+    <string name="main9_confirm">confirmar cita</string>
+    <string name="main9_txt_cita">SU CITA HA SIDO PREPARADA PARA EL:</string>
+    <string name="main9_hi">HOLA:</string>
+    <string name="main10_goodbye">MUCHAS GRACIAS POR CONFIAR EN NOSOTROS, HASTA LA PROXIMA</string>
+    <string name="main10_exit">salir</string>
+</resources>

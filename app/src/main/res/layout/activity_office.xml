@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".officeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main3_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main3_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main3_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main3_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/main3_guide3"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main3_button_volver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main10_button_volver"
+            app:strokeColor="@color/color_secondary_variant"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:strokeWidth="2dp"
+            app:cornerRadius="15dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main3_button_citas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main3_ver_mis_citas"
+            app:strokeColor="@color/color_secondary_variant"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:strokeWidth="2dp"
+            app:cornerRadius="15dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main3_teleco"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main3_linear"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main3_ver_teleco"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main3_air"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main3_teleco"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main3_air"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main3_alarm"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main3_air"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main3_alarm"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main3_electric"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main3_alarm"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/main3_electric"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main3_text_choose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/main3_tex_welcome"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/main3_electric"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main3_button_exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/main3_exit"
+        android:textSize="6sp"
+        android:layout_weight="1"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        app:cornerRadius="90dp"/>
+
+    <ImageView
+        android:id="@+id/main3_jumelcoLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/main3_text_choose"
+        app:layout_constraintEnd_toStartOf="@id/main3_guide2"
+        app:layout_constraintStart_toEndOf="@id/main3_guide1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_jumelco_logo_final"
+        android:gravity="center"
+        android:padding="20dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finishActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main8_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main8_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main8_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="horizontal"
+        />
+
+ 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main8_button_volver"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main8_guide3"
+        app:layout_constraintEnd_toStartOf="@id/main8_guide2"
+        app:layout_constraintStart_toEndOf="@id/main8_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/main10_button_volver"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main8_button_choose"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main8_button_volver"
+        app:layout_constraintEnd_toStartOf="@id/main8_guide2"
+        app:layout_constraintStart_toEndOf="@id/main8_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/main4_text_request"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main8_button_again"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main8_button_choose"
+        app:layout_constraintEnd_toStartOf="@id/main8_guide2"
+        app:layout_constraintStart_toEndOf="@id/main8_guide1"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/main8_button_ver"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main8_text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main8_button_again"
+        app:layout_constraintEnd_toStartOf="@id/main8_guide2"
+        app:layout_constraintStart_toEndOf="@id/main8_guide1"
+        android:layout_marginBottom="50dp"
+        android:text="SU CITA SE HA CREADO CORRECTAMENTE"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/color_secondary_variant"
+
+        />
+
+    <ImageView
+        android:id="@+id/main8_jumelcoLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/main8_text_title"
+        app:layout_constraintStart_toEndOf="@id/main8_guide1"
+        app:layout_constraintEnd_toStartOf="@id/main8_guide2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_jumelco_logo_final"
+        android:gravity="center"
+        android:padding="20dp"
+        app:strokeColor="@color/color_secondary_variant"
+        app:strokeWidth="2dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
