@@ -3,9 +3,9 @@
     <string name="acceder">acceder</string>
     <string name="main_olvido">¿Has olvidado la contraseña?</string>
     <string name="main_contraseña">contraseña</string>
-    <string name="main_usuario">nombre de usuario</string>
+    <string name="main2_usuario">nombre de usuario</string>
     <string name="main2_registrarse">registrarse</string>
-    <string name="main2_email">Introduzca su email</string>
+    <string name="main_email">Introduzca su email</string>
     <string name="main10_resultText">SU CONTRASEÑA ES:</string>
     <string name="main10_text_phone">INTRODUZCA SU TELEFONO</string>
     <string name="main10_text_email">INTRODUZCA SU EMAIL</string>

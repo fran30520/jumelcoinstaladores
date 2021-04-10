@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jumelcoinstaladores">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_jumelco_logo"
@@ -9,19 +11,19 @@
         android:roundIcon="@mipmap/ic_jumelco_logo_round"
         android:supportsRtl="true"
         android:theme="@style/base.Mytheme">
-        <activity android:name=".citaActivity"/>
-        <activity android:name=".goodbyeActivity" />
-        <activity android:name=".finishActivity" />
-        <activity android:name=".resultActivity" />
-        <activity android:name=".telecoActivity" />
-        <activity android:name=".airAconditionalActivity" />
-        <activity android:name=".alarmActivity" />
-        <activity android:name=".electricActivity" />
-        <activity android:name=".officeActivity" />
-        <activity android:name=".recoveryActivity" />
-        <activity android:name=".singupActivity" />
+        <activity android:name=".activitys.citaActivity"/>
+        <activity android:name=".activitys.goodbyeActivity" />
+        <activity android:name=".activitys.finishActivity" />
+        <activity android:name=".activitys.resultActivity" />
+        <activity android:name=".activitys.telecoActivity" />
+        <activity android:name=".activitys.airAconditionalActivity" />
+        <activity android:name=".activitys.alarmActivity" />
+        <activity android:name=".activitys.electricActivity" />
+        <activity android:name=".activitys.officeActivity" />
+        <activity android:name=".activitys.recoveryActivity" />
+        <activity android:name=".activitys.singupActivity" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".activitys.AuthActivity"
             android:theme="@style/splah">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

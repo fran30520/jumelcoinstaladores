@@ -1,10 +1,10 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivityRecoveryBinding
 
 class recoveryActivity : AppCompatActivity() {

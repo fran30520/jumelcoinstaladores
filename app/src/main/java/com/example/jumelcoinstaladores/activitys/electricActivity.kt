@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivityElectricBinding
 
 

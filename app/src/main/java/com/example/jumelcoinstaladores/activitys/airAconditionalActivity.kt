@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,27 +6,25 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
-import com.example.jumelcoinstaladores.databinding.ActivityAlarmBinding
+import com.example.jumelcoinstaladores.R
+import com.example.jumelcoinstaladores.databinding.ActivityAirAconditionalBinding
 
+class airAconditionalActivity : AppCompatActivity() {
 
-class alarmActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityAlarmBinding
+    private lateinit var binding: ActivityAirAconditionalBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTheme(R.style.base_Mytheme)
 
-      binding= ActivityAlarmBinding.inflate(layoutInflater)
+        binding= ActivityAirAconditionalBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)
 
         // acceso a los items del spinner
-        val servicios = resources.getStringArray(R.array.Servicios_Alarm)
+        val servicios = resources.getStringArray(R.array.Servicios_air)
 
         // acceso al spinner
-        val spinner=binding.main5Spinner
+        val spinner=binding.main6Spinner
 
         if (spinner != null) {
             val adapter = ArrayAdapter(this,
@@ -39,20 +37,20 @@ class alarmActivity : AppCompatActivity() {
                                             view: View, position: Int, id: Long) {
 
                 }
-
                 override fun onNothingSelected(parent: AdapterView<*>) {
+
                 }
             }
         }
 
 
-        binding.main5ButtonVolver.setOnClickListener {
-            val intent= Intent(this,officeActivity::class.java)
+
+        binding.main6ButtonVolver.setOnClickListener {
+            val intent= Intent(this, officeActivity::class.java)
             startActivity(intent)
         }
-
-        binding.main5ButtonChoose.setOnClickListener {
-            val intent=Intent(this,citaActivity::class.java)
+        binding.main6ButtonChoose.setOnClickListener {
+            val intent=Intent(this, citaActivity::class.java)
             startActivity(intent)
         }
     }

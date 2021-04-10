@@ -1,6 +1,5 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,7 +22,7 @@ class citaActivity : AppCompatActivity() {
         }
         binding.main9ButtonReturn.setOnClickListener {
 
-            val intent = Intent(this,officeActivity::class.java)
+            val intent = Intent(this, officeActivity::class.java)
             startActivity(intent)
 
         }

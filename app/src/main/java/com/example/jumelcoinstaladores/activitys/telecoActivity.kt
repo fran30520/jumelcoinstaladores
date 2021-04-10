@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
+import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivityTelecoBinding
 
 class telecoActivity : AppCompatActivity() {
@@ -48,12 +48,12 @@ class telecoActivity : AppCompatActivity() {
 
 
         binding.main7ButtonVolver.setOnClickListener {
-            val intent= Intent(this,officeActivity::class.java)
+            val intent= Intent(this, officeActivity::class.java)
             startActivity(intent)
         }
 
         binding.main7ButtonChoose.setOnClickListener {
-            val intent=Intent(this,citaActivity::class.java)
+            val intent=Intent(this, citaActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.content.Context
 import android.content.Intent
@@ -22,7 +22,6 @@ class goodbyeActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.main10ButtonExit.setOnClickListener {
-
             finishAffinity()
         }
     }

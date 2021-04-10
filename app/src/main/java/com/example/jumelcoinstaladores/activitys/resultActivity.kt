@@ -1,10 +1,8 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
-import android.app.Instrumentation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.jumelcoinstaladores.databinding.ActivityRecoveryBinding
 import com.example.jumelcoinstaladores.databinding.ActivityResultBinding
 
 class resultActivity : AppCompatActivity() {
@@ -23,7 +21,7 @@ class resultActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.main10ButtonVolver.setOnClickListener {
-            val intent=Intent(this,officeActivity::class.java)
+            val intent=Intent(this, officeActivity::class.java)
             startActivity(intent)
         }
 

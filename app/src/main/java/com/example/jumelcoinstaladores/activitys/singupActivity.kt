@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores
+package com.example.jumelcoinstaladores.activitys
 
 import android.app.ActivityOptions
 import android.content.Context
@@ -6,7 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.view.get
+import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivitySingupBinding
 import com.google.android.material.textfield.TextInputEditText
 
