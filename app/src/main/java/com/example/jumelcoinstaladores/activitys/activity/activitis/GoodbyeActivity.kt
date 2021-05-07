@@ -1,15 +1,11 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
-import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.example.jumelcoinstaladores.databinding.ActivityGoodbyeBinding
-import java.util.logging.Handler
 
 
-class goodbyeActivity : AppCompatActivity() {
+class GoodbyeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityGoodbyeBinding
 

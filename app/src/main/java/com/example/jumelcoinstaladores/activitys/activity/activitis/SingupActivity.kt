@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
 import android.app.ActivityOptions
 import android.content.Context
@@ -6,11 +6,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import com.example.jumelcoinstaladores.R
+import com.example.jumelcoinstaladores.activitys.activity.ViewModels.ClientesViewModel
 import com.example.jumelcoinstaladores.databinding.ActivitySingupBinding
 import com.google.android.material.textfield.TextInputEditText
 
-class singupActivity : AppCompatActivity() {
+class SingupActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySingupBinding
 
@@ -32,13 +34,13 @@ class singupActivity : AppCompatActivity() {
         //Guardado de datos
         val prefs = getSharedPreferences(getString(R.string.pref_file), Context.MODE_PRIVATE).edit()
         prefs.putString("email", binding.main2EmailEdit.text.toString())
-        prefs.putString("password", binding.main2PasswordEdit.text.toString())
+        prefs.putString("name", binding.main2NombreEdit.text.toString())
         prefs.apply()
 
 
         //Colocamos los datos recuperados en el textView para despues guardarlos todos
         binding.main2EmailEdit.setText(email_auth.toString())
-        binding.main2PasswordEdit.setText(password_auth.toString())
+
 
         //casilla correspondiente al nombre
         binding.main2NombreEdit.setOnFocusChangeListener { _, hasFocus ->
@@ -109,11 +111,13 @@ class singupActivity : AppCompatActivity() {
         //boton registrar
         binding.main2Registrar.setOnClickListener {
 
+            val modelCliente: ClientesViewModel by viewModels()
+
             val name = binding.main2NombreEdit.text
             val apellidos = binding.main2ApellidosEdit.text
             val direction = binding.main2DirectionEdit.text
             val phone = binding.main2PhoneEdit.text
-            val attr = listOf(name, apellidos, direction, phone)
+
             var error = false
 
             if (name.isNullOrEmpty()) {
@@ -135,12 +139,13 @@ class singupActivity : AppCompatActivity() {
 
             if (!name.isNullOrEmpty() && !apellidos.isNullOrEmpty() && !direction.isNullOrEmpty() && !phone.isNullOrEmpty()) {
 
-                val prefs = getSharedPreferences(getString(R.string.pref_file),Context.MODE_PRIVATE).edit()
-                prefs.putString("name",binding.main2NombreEdit.text.toString())
-                prefs.putString("apellidos",binding.main2ApellidosEdit.text.toString())
-                prefs.putString("direction",binding.main2DirectionEdit.text.toString())
-                prefs.putString("phone",binding.main2PhoneEdit.text.toString())
+                val prefs = getSharedPreferences(getString(R.string.pref_file), Context.MODE_PRIVATE).edit()
+                prefs.putString("name", binding.main2NombreEdit.text.toString())
+                prefs.putString("apellidos", binding.main2ApellidosEdit.text.toString())
+                prefs.putString("direction", binding.main2DirectionEdit.text.toString())
+                prefs.putString("phone", binding.main2PhoneEdit.text.toString())
                 prefs.apply()
+
 
                 completar()
 
@@ -163,21 +168,20 @@ class singupActivity : AppCompatActivity() {
         return text.toString()
 
     }
-    fun completar(){
 
-        val prefs=getSharedPreferences(getString(R.string.pref_file),Context.MODE_PRIVATE)
-        val email_auth=prefs.getString("email",null)
-        val password_auth=prefs.getString("password",null)
-        val name_auth=prefs.getString("name",null)
-        val direction_auth=prefs.getString("direction",null)
-        val phone_auth=prefs.getString("phone",null)
+    fun completar() {
+
+        val prefs = getSharedPreferences(getString(R.string.pref_file), Context.MODE_PRIVATE)
+        val email_auth = prefs.getString("email", null)
+        val password_auth = prefs.getString("password", null)
+        val name_auth = prefs.getString("name", null)
+        val direction_auth = prefs.getString("direction", null)
+        val phone_auth = prefs.getString("phone", null)
 
 
-        if(email_auth!=null && password_auth!=null&&name_auth!=null&&direction_auth!=null&&phone_auth!=null){
-            val intent=Intent(this, AuthActivity::class.java)
-            intent.putExtra("email", binding.main2EmailEdit.text.toString())
-            intent.putExtra("password", binding.main2PasswordEdit.text.toString())
-            startActivity(intent)
-        }
+        val intent = Intent(this, AuthActivity::class.java)
+        intent.putExtra("email", binding.main2EmailEdit.text.toString())
+        startActivity(intent)
+
     }
 }

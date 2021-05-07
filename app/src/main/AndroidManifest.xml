@@ -5,25 +5,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_jumelco_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_jumelco_logo_round"
         android:supportsRtl="true"
         android:theme="@style/base.Mytheme">
-        <activity android:name=".activitys.citaActivity"/>
-        <activity android:name=".activitys.goodbyeActivity" />
-        <activity android:name=".activitys.finishActivity" />
-        <activity android:name=".activitys.resultActivity" />
-        <activity android:name=".activitys.telecoActivity" />
-        <activity android:name=".activitys.airAconditionalActivity" />
-        <activity android:name=".activitys.alarmActivity" />
-        <activity android:name=".activitys.electricActivity" />
-        <activity android:name=".activitys.officeActivity" />
-        <activity android:name=".activitys.recoveryActivity" />
-        <activity android:name=".activitys.singupActivity" />
         <activity
-            android:name=".activitys.AuthActivity"
+            android:name=".activitys.activity.activitis.AuthActivity"
             android:theme="@style/splah">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activitys.activity.activitis.CitaActivity"/>
+        <activity android:name=".activitys.activity.activitis.GoodbyeActivity" />
+        <activity android:name=".activitys.activity.activitis.FinishActivity" />
+        <activity android:name=".activitys.activity.activitis.ResultActivity" />
+        <activity android:name=".activitys.activity.activitis.TelecoActivity" />
+        <activity android:name=".activitys.activity.activitis.AirAconditionalActivity" />
+        <activity android:name=".activitys.activity.activitis.AlarmActivity" />
+        <activity android:name=".activitys.activity.activitis.ElectricActivity" />
+        <activity android:name=".activitys.activity.activitis.OfficeActivity" />
+        <activity android:name=".activitys.activity.activitis.RecoveryActivity" />
+        <activity android:name=".activitys.activity.activitis.SingupActivity" />
     </application>
 
 </manifest>

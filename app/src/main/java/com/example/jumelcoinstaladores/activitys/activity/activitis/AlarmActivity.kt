@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivityAlarmBinding
 
 
-class alarmActivity : AppCompatActivity() {
+class AlarmActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAlarmBinding
 
@@ -47,12 +47,12 @@ class alarmActivity : AppCompatActivity() {
 
 
         binding.main5ButtonVolver.setOnClickListener {
-            val intent= Intent(this, officeActivity::class.java)
+            val intent= Intent(this, OfficeActivity::class.java)
             startActivity(intent)
         }
 
         binding.main5ButtonChoose.setOnClickListener {
-            val intent=Intent(this, citaActivity::class.java)
+            val intent=Intent(this, CitaActivity::class.java)
             startActivity(intent)
         }
     }

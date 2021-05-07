@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.electricActivity">
+    tools:context=".activitys.activity.activitis.ElectricActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/main4_guide1"

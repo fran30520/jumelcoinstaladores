@@ -1,11 +1,11 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.jumelcoinstaladores.databinding.ActivityFinishBinding
 
-class finishActivity : AppCompatActivity() {
+class FinishActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFinishBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +16,12 @@ class finishActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.main8ButtonAgain.setOnClickListener {
-            val intent = Intent(this, resultActivity::class.java)
+            val intent = Intent(this, ResultActivity::class.java)
             startActivity(intent)
 
         }
         binding.main8ButtonChoose.setOnClickListener {
-            val intent = Intent(this, officeActivity::class.java)
+            val intent = Intent(this, OfficeActivity::class.java)
             startActivity(intent)
         }
         binding.main8ButtonVolver.setOnClickListener {

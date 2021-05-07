@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.airAconditionalActivity">
+    tools:context=".activitys.activity.activitis.AirAconditionalActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/main6_guide1"

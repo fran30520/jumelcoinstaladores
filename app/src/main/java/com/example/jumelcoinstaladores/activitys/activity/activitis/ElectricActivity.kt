@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,7 @@ import com.example.jumelcoinstaladores.databinding.ActivityElectricBinding
 
 
 
-class electricActivity : AppCompatActivity() {
+class ElectricActivity : AppCompatActivity() {
     private lateinit var binding: ActivityElectricBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,14 +54,14 @@ class electricActivity : AppCompatActivity() {
             }
         }
         binding.main4ButtonVolver.setOnClickListener {
-            val intent = Intent(this, officeActivity::class.java)
+            val intent = Intent(this, OfficeActivity::class.java)
             startActivity(intent)
         }
         binding.main4ButtonChoose.setOnClickListener {
 
             val observ = binding.main4TextObserv.text
 
-            val intent = Intent(this, citaActivity::class.java)
+            val intent = Intent(this, CitaActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.jumelcoinstaladores.activitys
+package com.example.jumelcoinstaladores.activitys.activity.activitis
 
 import android.content.Context
 import android.content.Intent
@@ -7,7 +7,7 @@ import android.os.Bundle
 import com.example.jumelcoinstaladores.R
 import com.example.jumelcoinstaladores.databinding.ActivityRecoveryBinding
 
-class recoveryActivity : AppCompatActivity() {
+class RecoveryActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecoveryBinding
 
